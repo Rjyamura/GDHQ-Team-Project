@@ -22,7 +22,7 @@ public class SpawnManager : MonoBehaviour
     {
         while (true)
         {
-            Vector3 PosToSpwan = new Vector3(Random.Range(-9.8f, 9.8f), 5.8f, 0);
+            Vector3 PosToSpwan = new Vector3(Random.Range(-9.8f, 9.8f), 8f, 0);
             Instantiate(_enemyPrefab, PosToSpwan, Quaternion.identity);
             yield return new WaitForSeconds(5.0f);
         }
